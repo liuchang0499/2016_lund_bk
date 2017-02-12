@@ -1,0 +1,124 @@
+body {
+ font-family: pingfang sc, Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+}
+a {
+	color: #000;
+}
+.ant-btn-primary {
+	background-color: #1ED760;
+	border-color: #1ED760;
+}
+.ant-btn-primary:hover {
+ background-color: #1ED760;
+ border-color: #1ED760;
+}
+.ant-btn-primary:focus {
+ background-color: #1ED760;
+ border-color: #1ED760;
+}
+.ant-btn-ghost{
+	border-color: #1ED760;
+	 color: #1ED760;
+}
+.ant-btn-ghost:hover {
+ border-color: #1ED760;
+ color: #1ED760;
+}
+.ant-btn-ghost:focus {
+ border-color: #1ED760;
+ color: #1ED760;
+}
+.ant-pagination-item:hover{
+border-color: #1ED760;
+}
+.ant-pagination-item:focus{
+ border-color: #1ED760;
+}
+.ant-pagination-item-active{
+ background-color: #1ED760;
+  border-color: #1ED760;
+}
+.ant-pagination-item:hover {
+    border-color: #1ED760;
+}
+.ant-pagination-prev:hover{
+    border-color: #1ED760;
+}
+.ant-pagination-next:hover {
+    border-color: #1ED760;
+}
+.ant-pagination-disabled:hover{
+    border-color: #1ED760;
+}
+.ant-collapse-content{
+	background-color: #EEEEEE;
+	height: 90px;
+}
+.ant-collapse-header{
+	margin-top: 30px;
+}
+.ant-modal-content{
+    width: 720px;
+    height: 400px;
+}
+.ant-modal-footer{
+    padding: 10px 18px 10px 10px;
+}
+.slick-slide{
+    width: 800px;
+    height: 400px;
+}
+.slick-active{
+    width: 800px;
+    height: 400px;
+}
+.ant-input:focus{
+    border-color: #1ED760;
+}
+.ant-input:hover{
+    border-color: #1ED760;
+}
+.ant-mention-editor:focus{
+    border-color: #1ED760;
+}
+.ant-mention-wrapper .ant-mention-editor:hover{
+    border-color: #1ED760;
+}
+
+/* menu css set*/
+.ant-menu-submenu-title:focus{
+    background-color: #000;
+}
+.ant-menu-submenu-horizontal.ant-menu-submenu-open.ant-menu-submenu-active..ant-menu-submenu:focus{
+    background-color: #000;
+}
+.ant-menu.ant-menu-vertical.ant-menu-sub.ant-menu-hidden:focus{
+    background-color: #000;
+}
+.ant-menu-horizontal {
+  border: 0;
+  /* border-bottom: 1px solid #e9e9e9; */
+  box-shadow: none;
+  z-index: 0;
+}
+.bg_gray{
+  background-color: #EEEEEE;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+.bg_gray:hover{
+  background-color: #55C883;
+  color: #E8F9F2;
+}
+.shadow{
+    border: 1px solid #696;padding: 10px 10px;text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;background: #FFFFFF;
+}
+

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: node:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: bash -c "npm i --loglevel error -g nodemon && npm --loglevel error i && npm run start-dev"

@@ -1,0 +1,452 @@
+/* =========================================
+
+Theme Name: Blue App
+Theme URI: http://mishk.at/
+Author: S M Mishkatul Islam
+Author URI: http://mishk.at/
+Description: One page Responsive HTML5 parallax business landing page
+Version: 1.0.0
+Tags: html5, themplate, landing page, app landing page
+
+========================================= */
+/* =========================================
+/* 1 - Google Font
+========================================= */
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700);*/
+
+/* =========================================
+ 2 - Global Styles
+========================================= */
+body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+h1 {
+	margin-bottom: 30px;
+	font-size: 60px;
+	font-weight: 100;
+	color: #111;
+}
+p{
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size: 18px;
+	font-family:
+}
+strong {
+	font-weight: 400;
+}
+img {
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+
+
+.dark-bg {
+	background-color: #F2F3FD;
+
+}
+
+.underline {
+	position: relative;
+	font-size: 20px;
+	max-width: 2200px;
+	margin: auto;
+	margin-bottom: 60px;
+	color: #000;
+}
+.underline:before {
+	position: absolute;
+	content: "";
+	width: 450px;
+	height: 1px;
+	background-color: #777;
+	top: 50%;
+	left: -5%;
+}
+.underline:after {
+	position: absolute;
+	content: "";
+	width: 450px;
+	height: 1px;
+	background-color: #777;
+	top: 50%;
+	right: -5%;
+}
+.straightline {
+	position: relative;
+	content: "";
+	margin-bottom: 40px;
+	width: 1200px;
+	height: 1px;
+	background-color: #777;
+
+}
+
+.custom-btn {
+	background-color: #25C663;
+	color: #fff;
+
+}
+
+.btn:active, .btn.active {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.header {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.header p {
+	margin-bottom: 30px;
+}
+.bg-color {
+	background: rgba(0, 0, 0, 0.5);
+}
+.section-paddings {
+	padding-top: 155px;
+	padding-bottom:50px;
+}
+.section-padding {
+	padding-top: 60px;
+	padding-bottom:50px;
+}
+.section-padding-brown {
+	padding-top: 30px;
+	padding-bottom:30px;
+	background-color: #7A610F;
+}
+.section-padding-blue{
+	padding-top: 30px;
+	padding-bottom:30px;
+	background-color: #014B92;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.social a {
+	display: block;
+	width: 40px;
+	font-size: 28px;
+	border-radius: 100%;
+	text-align: center;
+	color: #949494;
+	margin: 10px 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.social a:hover {
+	color: #0099FF;
+}
+.form-control {
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.form-control:focus,
+textarea:focus {
+	border-color: #0099FF !important;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* =========================================
+   3. Section Header
+========================================= */
+header {
+	background: url(images/bg.jpg) 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
+/* =========================================
+   4. Section Menu
+========================================= */
+
+.navigation {
+	min-height: 70px;
+	background-color: #000;
+}
+.navbar {
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 6%;
+	min-height: 50px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+	font-size: 18px;
+	display: inline-flex;
+}
+
+.navigation .navbar {
+
+	background: transparent;
+	border: none;
+	margin-bottom: 0;
+	min-height: 70px;
+}
+
+.featured-item .icon i {
+	color: #0099FF;
+}
+.featured-item h3 {
+	color: #2E2E2E;
+}
+
+/* =========================================
+   9. Section Team
+============================================ */
+.team {
+	text-align: center;
+}
+.team .app-dev h4 {
+	font-size: 28px;
+	font-weight: 300;
+}
+.team .member {
+	width: 150px;
+	height: 140px;
+	position: relative;
+	overflow: hidden;
+	display: table;
+	margin: auto;
+}
+.team .member .details {
+	width: 150px;
+	height: 140px;
+	position: absolute;
+	background: rgba(0, 153, 255, 0.9);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	opacity: 0;
+}
+.team .member img {
+	position: absolute;
+	width: 150px;
+	height: 140px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.team .member .details p {
+	color: #fff;
+	padding:15px 10px 10px 10px;
+	position: absolute;
+	top: -100px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.team .member .details .icon {
+	position: relative;
+	top: 290px;
+	left: 0px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.team .member .details .icon a {
+	color: #fff;
+}
+.team .member .details .icon ul {
+	display: table;
+	margin: auto;
+}
+.team .member .details .icon ul li {
+	float: left;
+	margin-right: 10px;
+}
+.team .info:hover .details {
+	opacity: 1;
+}
+.team .info:hover .details p {
+	transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	-webkit-transform: translateY(100px);
+}
+.team .info:hover .icon {
+	transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-webkit-transform:translateY(-100px);
+}
+.team .title h5 {
+	margin-bottom: 50px;
+}
+
+/* =========================================
+   10. Section Price
+========================================= */
+.price {
+	border-top:5px solid #BFBFBF;
+}
+.price .price-table {
+	padding:0 30px;
+	position: relative;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	background-color: #fff;
+	margin-top:150px;
+	color: #222;
+	border-top:3px solid #000;
+}
+
+/* =========================================
+   11. Section Subscribe
+========================================= */
+.subscribe {
+	text-align: center;
+}
+.subscribe .subscribe-header {
+	width: 70%;
+	margin: auto;
+}
+.subscribe .subscribe-header p {
+	margin-bottom: 30px;
+}
+.subscribe .subscribe-form input {
+	width: 100%;
+	margin: auto;
+	height: 60px;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+/* =========================================
+   12. Section Download
+========================================= */
+#download {
+	background: url(images/bg5.jpg) 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+.download {
+	background-image: url(images/pattern5.png);
+}
+.download .underline:before,
+.download .underline:after {
+	background-color: #BBB;
+}
+.download .download-area img {
+	width: 30px;
+	float: left;
+	margin-top: 15px;
+}
+
+/* =========================================
+   14. Section Copyright
+========================================= */
+.copyright {
+	text-align: center;
+	padding: 10px 0;
+	background:#DDDDDD;
+}
+
+/* */
+.cicle {
+	border-radius: 50%;
+}
+.find {
+	position: absolute;
+	width: 300px;
+	margin: 0 auto;
+	background: none;
+	padding: 2em 20px;
+	top: 2695px;
+	left: 178px;
+	z-index: 1;
+	height: 309px;
+	opacity: 1;
+}
+
+.fint{
+	position: absolute;
+	width: 300px;
+	margin: 0 auto;
+	background: none;
+	padding: 2em 20px;
+	top: 1824px;
+	left: 1493px;
+	z-index: 2;
+	height: 309px;
+	opacity: 1;
+}
+
+.blue-person{
+	padding: 0 520px;
+	color:#FFFFFF;
+	text-align: left;
+	font-size: 18px;
+}
+
+.brown-person{
+	padding: 0 620px;
+	color:#FFFFFF;
+	text-align: right;
+	font-size: 18px;
+}
+
+.float-left{
+	float:left;
+	width: 123px;
+	height: 123px;
+	position: relative;
+	overflow: hidden;
+	margin: 0px 26px;
+	border:1px #FF0000 solid;
+}
+
+.layout-right{
+	text-align: right;
+}
+
+.carousel-control {
+	opacity : 0;
+	width: 5%;
+	background-image: #FFF;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+
+.ant-collapse-content-active {
+	height: 80px;
+	font-size: 18px;
+},
+.ant-collapse-header {
+    height: 70px;
+	font-size: 28px;
+	border: 10px 0px;
+}
+.ant-collapse-header{
+	height: 70px;
+	font-size: 20px;
+	border: 10px 0px;
+}

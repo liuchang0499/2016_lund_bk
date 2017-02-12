@@ -1,0 +1,223 @@
+/* 1 */
+{
+    "_id" : ObjectId("5828fdc6066c0c75a67a524e"),
+    "id" : "HyApaOLZl",
+    "brandName" : "Apple",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5828fddcf50bf575d8db38ac"),
+    "id" : "HyB1COUbg",
+    "brandName" : "Asus",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5828fdf2a3f76d75f2b6ae3b"),
+    "id" : "S1cxRdLZx",
+    "brandName" : "Dell",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("582a2844aa497327040018f7"),
+    "id" : "H1nBdsPbx",
+    "brandName" : "Hewlett-Packard",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("582a28566e391f2729c921c5"),
+    "id" : "Bk0IOsvWx",
+    "brandName" : "Lenovo",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("582a2869f1977f2743951ec1"),
+    "id" : "r1-uusD-g",
+    "brandName" : "Acer",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : true,
+        "b" : true,
+        "c" : true,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("582a2888da7334279bb03e9b"),
+    "id" : "r1equiwZl",
+    "brandName" : "Sony",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : false,
+        "b" : false,
+        "c" : false,
+        "d" : false
+    },
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("582a28945d742727b6cead29"),
+    "id" : "BJ29OjvWe",
+    "brandName" : "Samsung",
+    "equipmentAccessories" : {
+        "d" : [ 
+            3
+        ],
+        "c" : [ 
+            2
+        ],
+        "b" : [ 
+            1
+        ],
+        "a" : [ 
+            0
+        ]
+    },
+    "fields" : {
+        "a" : false,
+        "b" : false,
+        "c" : true,
+        "d" : true
+    },
+    "__v" : 0
+}

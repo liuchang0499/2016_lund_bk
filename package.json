@@ -1,0 +1,117 @@
+{
+  "name": "2016_latte",
+  "version": "1.6.0",
+  "description": "nodejs+expressjs+browserifyjs+reactjs(bebeljs)",
+  "main": "",
+  "scripts": {
+    "start-dev": "node_modules/.bin/nodemon --watch lib --exec 'npm run-script babel-node' ./lib/server",
+    "babel-node": "node_modules/.bin/babel-node --presets es2015-node,stage-2 --plugins transform-async-to-generator",
+    "lint": "node_modules/.bin/eslint --ext .js .; exit 0",
+    "lint-watch": "node_modules/.bin/esw --color -w lib , client ; exit 0",
+    "release": "standard-version",
+    "build-server": "./node_modules/.bin/babel --presets es2015-node,stage-2 --plugins transform-async-to-generator ./lib --out-dir build-server",
+    "build-client": "browserify -t [ cssify --global=true ] client/index.js > public/js/bundle.js",
+    "clean": "rm -rf ./build-server",
+    "prod-build": "npm run clean && npm run build-server && npm run build-client",
+    "start": "node web.js"
+  },
+  "browser": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ],
+          "plugins": [
+            "react-html-attrs",
+            [
+              "import",
+              {
+                "libraryName": "antd",
+                "style": "css"
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://h_wang@bitbucket.org/h_wang/2016_lund.git"
+  },
+  "author": "changliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/h_wang/2016_lund/issues"
+  },
+  "homepage": "https://bitbucket.org/h_wang/2016_lund/overview#readme",
+  "dependencies": {
+    "antd": "^2.5.2",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "creed": "^1.0.4",
+    "cssify": "^1.0.3",
+    "d3": "^3.5.17",
+    "express": "^4.14.0",
+    "express-http-proxy": "^0.7.4",
+    "express-session": "^1.14.2",
+    "file-saver": "^1.3.3",
+    "history": "^4.5.0",
+    "mobx": "^2.7.0",
+    "mobx-react": "^3.5.9",
+    "mongoose": "^4.7.3",
+    "normalize.css": "^4.2.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "pdfjs": "^1.0.0-alpha.5",
+    "react": "^15.4.1",
+    "react-cookie": "^1.0.4",
+    "react-dom": "^15.4.1",
+    "react-dropzone": "^3.7.3",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "serve-favicon": "^2.3.2",
+    "shortid": "^2.2.6",
+    "superagent": "^3.3.1",
+    "uglify-js": "^2.7.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-import": "^1.1.0",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-strong-mode": "0.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-node": "^5.0.5",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify-middleware": "^7.1.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "eslint-watch": "^2.1.14",
+    "keystone": "^4.0.0-beta.4",
+    "underscore": "1.8.3",
+    "mobx-react-devtools": "^4.2.10",
+    "standard-version": "^3.0.0",
+    "async": "^1.5.0",
+    "lodash": "^3.10.1",
+    "csv": "^0.4.6"
+  }
+}
