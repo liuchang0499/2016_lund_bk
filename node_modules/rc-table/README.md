@@ -109,11 +109,11 @@ React.render(<Table columns={columns} data={data} />, mountNode);
     </tr>
     <tr>
       <td>rowKey</td>
-      <td>string or Function(record, index):string</td>
+      <td>string or Function(record):string</td>
       <td>'key'</td>
       <td>
         If rowKey is string, `record[rowKey]` will be used as key.
-        If rowKey is function, the return value of `rowKey(record, index)` will be use as key.
+        If rowKey is function, the return value of `rowKey(record)` will be use as key.
       </td>
     </tr>
     <tr>
@@ -210,7 +210,7 @@ React.render(<Table columns={columns} data={data} />, mountNode);
       <td>getBodyWrapper</td>
       <td>Function(body)</td>
       <td></td>
-      <td>get wrapper of tbody, [demoe](http://react-component.github.io/table/examples/animation.html)</td>
+      <td>get wrapper of tbody, [demo](http://react-component.github.io/table/examples/animation.html)</td>
     </tr>
     <tr>
       <td>emptyText</td>

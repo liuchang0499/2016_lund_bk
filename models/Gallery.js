@@ -11,6 +11,7 @@ Gallery.add({
 	name: { type: String, required: true },
 	publishedDate: { type: Types.Date, default: Date.now },
 	images: { type: Types.CloudinaryImages },
+	price: {type: Types.Number }
 });
 
 Gallery.track = true;

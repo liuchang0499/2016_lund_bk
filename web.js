@@ -2,7 +2,7 @@ var keystone = require('keystone');
 
 keystone.init({
 
-  'name': 'Keystone',
+  'name': 'Admin',
   'brand': 'Demo',
 
   'favicon': 'public/favicon.ico',
@@ -11,10 +11,11 @@ keystone.init({
 
   'views': 'templates/views',
   'view engine': 'jade',
+  'port':'3001',
 
   'auto update': true,
-  'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://localhost/keystone-demo',
-  'cloudinary config': 'cloudinary://333779167276662:_8jbSi9FB3sWYrfimcl8VKh34rI@keystone-demo',
+  'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://dev:biogaslund@ds047146.mlab.com:47146/2017lund/keystone-demo',
+  'cloudinary config': 'cloudinary://974719199753275:BUXgG7yf44HkWhBkH6mAQe9vMo0@dy8kdozhn',
 
   'session': true,
   'auth': true,
@@ -47,9 +48,11 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
   'posts': ['posts', 'post-comments', 'post-categories'],
   'galleries': 'galleries',
-  'enquiries': 'enquiries',
   'users': 'users',
   'field-tests': 'things'
 });
+
+
+
 
 keystone.start();

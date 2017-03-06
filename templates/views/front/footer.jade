@@ -1,0 +1,56 @@
+import React from 'react';
+import { render } from 'react-dom';
+import { Link } from 'react-router';
+import { Row, Col} from 'antd';
+const copyright = '版权所有: 碧普华瑞环境技术(北京)有限公司 Copyright';
+const companyid = '2016 京ICP备11039760号.';
+const aboutSite = '关于青枣网';
+const jobs = '加入我们';
+const mediaChannel = '媒体通道';
+const feedback = '反馈建议:';
+const contact_tel = '客服电话:';
+const worktime = '工作时间: 周一到周五 09 : 00 - 17 : 00';
+const tel = '全国免费咨询电话';
+const telno = '400-8989-939';
+const partner = '合作伙伴';
+const styles = {
+inc: {
+height: '20px',
+float:'left',
+backgroundColor:'transparent'
+}
+}
+const Footer = React.createClass ({
+render(){
+return (
+footer
+  row(style='{{', bordertop:='', groove='', height:='', }}='')
+    col(span='{11}', offset='{3}', style="{{marginTop:'30px'}}")
+    p(style='{{', fontsize:='', fontweight:='', }}='')
+      { aboutSite } 
+      link(to="{'/jobs'}")
+      {jobs}  {mediaChannel}
+    p(style='{{', fontsize:='') { feedback }
+    p(style='{{', fontsize:='', }}='') { contact_tel }
+    p(style='{{', fontsize:='', }}='') { worktime }
+    p(style='{{', fontsize:='', fontweight:='', }}='') { tel }
+    p(style='{{', fontsize:='', fontweight:='', }}='')  { telno }
+    col(span='{7}', style="{{marginTop:'30px'}}")
+    row
+      p(style='{{', fontsize:='', fontweight:='', }}='') { partner }
+    row
+      col(span='{6}')
+      img(style='{{', height:='', }}='', src='/images/4c_awite-logo_2014.png')
+      col(span='{4}')
+      img(style='{{', height:='', }}='', src='/images/logo3.png')
+      col(span='{8}')
+      img(style='{{', height:='', }}='', src='/images/bpc_logo.png')
+  row(type='flex', align='middle', style="{{backgroundColor:'#DDDDDD',", height:='')
+    col(span='{11}', offset='{3}')
+    p(style='{{', fontsize:='', }}='') {copyright}©{companyid}
+    col(span='{5}', offset='{5}')
+    img(style='{styles.inc}', src='/images/logologos.png')
+    )
+  }
+});
+export default Footer ;
